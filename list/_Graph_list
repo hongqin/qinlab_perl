@@ -1,0 +1,7 @@
+# Usage: $flag = all_sources_symmetrical_DijDists_by_cats(\%neighbours, \%dictionary, \%avg_dists_by_cats, \%std_by_cats)
+# Usage: $flag = all_sources_shortestDistances_by_categories(\%neighbours, \%dictionary, \%avg_dists_by_cats, \%std_by_cats);  
+# Usage:  $flag = single_source_shortestDistances_by_categories(\%neighbours, $source, \%dictionary, \%dists_by_cats);
+# Usage:  $flag = dijkstra(\%neighbours, $source, \%distances, \%predecessors, \%weights);  
+# Usage: $u = extract_min(\%Elements, \%values, \%Solved);    
+# Usage: $flag = relax($u, $v, $w, \%distances, \%predecessors );   
+# Usage: $infinity_flag = initialize_single_source(\%neighbours, $source, \%distances, \%predecessors);         

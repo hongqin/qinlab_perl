@@ -1,0 +1,5 @@
+#Usage: ( $current_record_in_one_line, $returned_file_position)
+#Usage: ( $position_of_next_record, $current_record_in_one_line)
+#Usage: ( $position_of_next_record, $current_record_in_one_line) 
+# Usage:  %nucPairCount =count16NucPairs(\@alignedPair);	
+#Usage: @aln_no_gap = removeGaps_in_alignedPair(\@gaped_align);

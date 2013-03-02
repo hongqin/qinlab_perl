@@ -1,0 +1,100 @@
+############################################################
+# Subroutines for taxonomy analysis
+# Hong Qin
+#
+#   use lib '/shar/lib/perl/';     use Taxonomy
+############################################################
+
+
+
+
+
+
+
+ 
+############################################################
+# Usage:        if (  hit_hyperthermo_bac ( @hit1, $hit2, ... ... ) eq 'YES' )
+
+sub hit_hyperthermo_bac {
+ use strict; use warnings; my $debug = 0;
+  my $hyperthermo_bac = "Aae Tma";
+  my @hits = @_;        my ( $element, $hit ) = ();
+  my @hyperthermo_bac = split ( /\s+/,  $hyperthermo_bac ) ;
+  if ($debug) { foreach my $i ( 0..$#hyperthermo_bac ) { print "- $hyperthermo_bac[$i]-"; } print "\n"; }
+ 
+  foreach $element ( @hyperthermo_bac ) {
+        foreach $hit ( @hits ) {
+                if ( $hit =~ / $element[: ]/ ) { return 'YES' }
+        }
+  }
+  return 'NO';
+}
+
+
+############################################################
+# Usage:        if (  hit_crenarchaeota( @hit1, $hit2, ... ... ) eq 'YES' )
+ 
+sub  hit_crenarchaeota  {
+  use strict; use warnings; my $debug = 0;
+  my $crenarchaeota = "Ape aeP Sso Sto";
+  my @hits = @_;        my ( $element, $hit ) = ();
+  my @crenarchaeota = split ( /\s+/, $crenarchaeota ) ;
+  if ($debug) { foreach my $i ( 0..$#crenarchaeota ) { print "-$crenarchaeota[$i]-"; } print "\n"; }
+ 
+  foreach $element ( @crenarchaeota ) {
+        foreach $hit ( @hits ) {
+                if ( $hit =~ / $element[: ]/ ) { return 'YES' }
+        }
+  }
+  return 'NO';
+}
+
+ 
+############################################################
+# Usage:        if (  hit_euryarchaeota( @hit1, $hit2, ... ... ) eq 'YES' )
+
+sub  hit_euryarchaeota  {
+  use strict; use warnings; my $debug = 0;
+  my $euryarchaeota = "Afu Hbs Mja Mth Tac Tvo Pho Pab";
+  my @hits = @_;        my ( $element, $hit ) = ();
+  my @euryarchaeota = split ( /\s+/, $euryarchaeota ) ;
+  if ($debug) { foreach my $i ( 0..$#euryarchaeota ) { print "-$euryarchaeota[$i]-"; } print "\n"; }
+ 
+  foreach $element ( @euryarchaeota ) {
+        foreach $hit ( @hits ) {
+                if ( $hit =~ /  $element[: ]/ ) { return 'YES' }
+        }
+  }
+  return 'NO';
+}
+
+
+############################################################
+# Usage: 	if ( hit_eubacteria_beta( @hit1, $hit2, ... ... ) eq "YES" ) 
+# This does not consider Thermotoga and Aquifex
+# tested in ?
+# used in ?
+
+sub hit_eubacteria_beta {
+  use strict; use warnings; my $debug = 0;
+
+  # 31 Species abbreviations
+  my $eubacteria = "jHp Cje Mlo Ccr Rpr Ctr Cpn Tpa Bbu Uur Mpn Mge Dra Mtu Mle Lla 
+   Spy Bsu Bha Syn Eco EcZ Buc Pae Vch Hin Pmu Xfa Nme NmA Hpy ";
+
+  my @hits = @_; 	 my @eubacteria = split ( /\s+/, $eubacteria ) ;	  my ($element, $hit) = ();
+
+  if ($debug) { foreach my $i ( 0..$#eubacteria ) { print "-$eubacteria[$i]-"; } print "\n"; }
+  foreach $element ( @eubacteria ) {
+	foreach $hit ( @hits ) { 
+	 	if ( $hit =~ / $element[: ]/ ) { return 'YES' }
+	}
+  }
+  return 'NO'; 
+}
+
+
+# end of the module
+
+1;
+

@@ -1,0 +1,2 @@
+package
+codon2aa in BeginPerlBioinfo needs to be changed.

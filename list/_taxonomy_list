@@ -1,0 +1,4 @@
+# Usage:        if (  hit_hyperthermo_bac ( @hit1, $hit2, ... ... ) eq 'YES' )
+# Usage:        if (  hit_crenarchaeota( @hit1, $hit2, ... ... ) eq 'YES' )
+# Usage:        if (  hit_euryarchaeota( @hit1, $hit2, ... ... ) eq 'YES' )
+# Usage: 	if ( hit_eubacteria_beta( @hit1, $hit2, ... ... ) eq "YES" ) 

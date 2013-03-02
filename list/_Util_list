@@ -1,0 +1,51 @@
+# Usage: $flag = parse_paired_ids_by_row(\$in_file,\%pairs);  
+# Usage: %unique_hash1_keys    = hash1_not_in_hash2(\%hash1,\%hash2);    
+# Usage: $shared_keys = get_shared_keys(\%hash1, \%hash2);
+# Usage:  Untested. $new_line = remove_white_spaces_of_a_line($line, $delim);   
+# Usage: $flag = concatenate_hashes(\%large_hash, \%small_hash, \$delim);
+# Usage: $flag = array_2_file(\$filename, \@lines, \$delim);
+# Usage: $flag = array_2_filehandle( $fh, \@lines, \$delim);
+# Usage: $flag = array_2_filehandle_with_return( $fh, \@lines, \$delim);
+# Usage: $flag = adjacency_list_2_pairs (\%neighbours, \%pairs );
+# Usage: %symmetrized_hash = symmetrize_a_hash_by_keys( \%input_hash );  
+# Usage: $short_name =  get_shortened_name ($filename);
+# Usage: hash_2_filehandle3( $fh, \%hash, $dlim1, $dlim2 );
+# Usage: hash_2_filehandle($fh, \%hash, \@ordered_keys, \$delimitor);
+# Usage: hash_2_filehandle2($fh, \%hash, \@ordered_keys, \$delim_key, \$delim_out);
+# Usage:  my $short_date = get_short_date_US();
+# Usage:  my $short_time_stamp = get_short_time_stamp_US();
+# Usage:  my $time_stamp = get_time_stamp_US();     
+# Usage:  $flag = parse_ordered_ids_by_row(\$in_file,\@ordered_ids);
+# Usage:  $flag = parse_single_network_in_adjList(\$networkfile,\%neighbours,\%dictionary,\$old_header);  
+# Usage:  $flag = parse_dictionary(\$dic_file, \%dictionary, \%oldDefiniton_2_newDefition);   
+# Usage:  $flag = parse_dictionary(\$dic_file, \%dictionary );   
+# Usage: my %heterogenous_pairs = remove_homodimers(\%input_pairs);   
+# Usage: $flag = translate_adjacency_list_2_pairs_by_lookupTable (\%old_neighbours, \%new_pairs, \%lookup_table );
+# Usage: $largest_symbol =  get_largest_symbol(@symbols);  
+# Usage: $flag = all_vertices_BFS (\%neighbours, \%paths )
+# Usage: $flag = single_source_BFS (\%neighbours, $source, \%paths )
+# Usage: $flag = get_nonRedundant_clusters(\%in_clusters,\%nr_clusters, [ \%node_2_cluster_head ] );
+# Usage: $flag = all_sources_BFS_on_same_colored_nodes (\%neighbours, \%same_color_clusters,\%dictionary)  
+# Usage: $flag = single_source_BFS_on_same_colored_nodes (\%neighbours, $source, 
+# Usage: @longest_list =  get_longest_lists( @array_of_lists );     
+# Usage: @new_lines = single_linkage_cluster_on_array_of_list ( @lines )
+# Usage: @new_lines = one_step_single_linkage_cluster_on_headList( @lines )
+# Usage: @new_lines = single_linkage_cluster_on_head_list( @lines );
+# Usage: %all_nr_pairs = get_all_nr_pairs (\@all_neighbouring_nodes );
+# Usage: $flag = pairwise_to_adjacency_list(\%pairwised_ids, \%neighbours);
+# Usage: @linked_list = convert_pairwise_to_linked_list(\%pairwised_ids, \@unique_ids);
+# Usage: @linked_list = attach_categories(\@linked_list, \%categoires);
+# Usage: %pairs = get_pairs(\@data);
+# Usage: @array_without_self_pairing_at_even_positions = remove_self_pairing_at_even_position(\@data);
+# Usage: $index = get_first_tandem_repeats_at_even_positions(\@data);
+# Usage: ($bigger, $smaller) = order_big2small( $string1, $string2);
+# Usage: @big_2_small_elements = order_big2small_array( @elements);
+# Usage: @nonredunt_elements = get_nonredundant_elements ( \@elements );
+# Usage: %nr_pairs = get_nonredundant_unordered_pairs2( \@pair1_in_lines, \@pair2_in_lines );
+# Usage: %shared_pairs = get_shared_pairs( \%hashTable1, \%hashTable2 );
+# Usage: @lines = remove_white_spaces(@lines);
+# Usage: write_hash2file(\%hash, $outfile, "\t");  
+# Usage: set_hash(\%hash1, \@lines, "\t" );   
+# Usage:  %intersection = intersection( \%hash1,\%hash2 )
+# Usage: showHashTable2(\%hashTableInput, $lowest_value);
+# Usage: showHashTable(\%hashTableInput);

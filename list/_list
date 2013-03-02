@@ -1,0 +1,123 @@
+AA.pm:# Usage: %synonymous_codons = get_synonymous_codons();
+AA.pm:# Usage: @aa1 = get_20_aa_letters();
+Align.pm:#Usage: ( $current_record_in_one_line, $returned_file_position)
+Align.pm:#Usage: ( $position_of_next_record, $current_record_in_one_line)
+Align.pm:#Usage: ( $position_of_next_record, $current_record_in_one_line) 
+Align.pm:# Usage:  %nucPairCount =count16NucPairs(\@alignedPair);	
+Align.pm:#Usage: @aln_no_gap = removeGaps_in_alignedPair(\@gaped_align);
+Codon.pm:# Usage: my @triplets = line2triplets( \$line );
+Codon.pm:# Usage: my %triplet_pos = get_triplet_positions_in_a_string( \$line );       
+Codon.pm:# Usage: $string_of_delimited_triplets = seq2delimited_triplets($seq);
+Codon.pm:# Usage: showCodonTableInTCAG2(\%codons_hash1, \%codons_hash2);
+Codon.pm:# Usage: showCodonTableInTCAG(\%codons_hash);
+Codon.pm:# Usage: getStandardCodonsHashTable(\%codons_hash);
+Codon.pm:# Usage: getStandardCodons(\@codons);
+Codon.pm:# Usage: $Answer = EndIsStopCodon($dna);
+Codon.pm:#Usage: %merged_codon_counts = mergeCounts(\%FirstCount, \%SecondCount);
+Codon.pm:#Usage:  $four_fold_seq = dna2_4fold($nuc);   
+Codon.pm:#Usage: %codon_counts = countEachOf64Codons($dna_seq_no_gap);
+Codon.pm:#Usage: $num_of_T = countT($dna_seq) 041903 moved to Nucleotide.pm
+Codon.pm:#Usage $num_of_fold = codon_is_nfold($codon);
+FASTA.pm:# Usage:  $flag = adjust_last_codons1 ($in_cds_fl, $stop_codon_flag, $choice_of_stop );
+FASTA.pm:# Usage:  $Nc = get_Nc_from_chips( \$seq );
+FASTA.pm:# Usage:  @uniq_tokens = extract_tokens_frm_a_fasta_header( \$header, \@uniq_token_pos );     
+FASTA.pm:# Usage:  my @tokens = get_tokens_in_a_fasta_header ( $header );  
+FASTA.pm:# Usage:  $flag = auto_detect_uniq_tokens_in_fasta_headers($in_fl, $out_ctl_fl);      
+FASTA.pm:# Usage: $flag = paddle_fasta_file1($infl, $outfl)
+Graph.pm:# Usage: $flag = all_sources_symmetrical_DijDists_by_cats(\%neighbours, \%dictionary, \%avg_dists_by_cats, \%std_by_cats)
+Graph.pm:# Usage: $flag = all_sources_shortestDistances_by_categories(\%neighbours, \%dictionary, \%avg_dists_by_cats, \%std_by_cats);  
+Graph.pm:# Usage:  $flag = single_source_shortestDistances_by_categories(\%neighbours, $source, \%dictionary, \%dists_by_cats);
+Graph.pm:# Usage:  $flag = dijkstra(\%neighbours, $source, \%distances, \%predecessors, \%weights);  
+Graph.pm:# Usage: $u = extract_min(\%Elements, \%values, \%Solved);    
+Graph.pm:# Usage: $flag = relax($u, $v, $w, \%distances, \%predecessors );   
+Graph.pm:# Usage: $infinity_flag = initialize_single_source(\%neighbours, $source, \%distances, \%predecessors);         
+moran.pm:# Usage: %freq = get_freq(\@data);
+moran.pm:# Usage: $occurence = occurence_of_less_or_equal_inputValue(\@data, $value);
+moran.pm:# Usage: $occurence = occurence_of_greater_or_equal_inputValue(\@data, $value);     
+moran.pm:# Usage: $coviance = covariance(\@x, \@y)
+moran.pm:# Usage: $Pearson_R = correlation(\@x, \@y)
+moran.pm:# Usage: ( $slope, $intercept ) = best_line(\@x, \@y)      
+moran.pm:# Usage: $significance = gaussian1 ($value_of_interest, $mean, $variance )
+moran.pm:# Usage: $min = min(@data) 
+moran.pm:# Usage: $max = max(@data)
+moran.pm:# Usage: @i_min = mini(\@data)
+moran.pm:# Usage: @i_max = maxi(\@data)
+moran.pm:# Usage: ( $y_string, $x_string) = histogram_2_xyStrings( \@histogram, "\t" );   
+moran.pm:# Usage: @histograms = getHistogram_integer(\@integers, $step,$lowerBound, $upperBound )
+moran.pm:# Usage: @histograms = getHistogram(\@data, $num_of_bins, $lowerBound, $upperBound )
+moran.pm:# Usage:  ??
+moran.pm:# Usage: ?
+moran.pm:# Usage $significance = pseduoSignificance($totalNum, $count, $mean, $bootstrap) ;
+moran.pm:# Usage @ar= randomIntegerSet( $lowerBound, $upperBound, $number_of_randomIntegers )
+moran.pm:# Usage $flag = round_hash(\%hash, $precision)
+moran.pm:# Usage $return = round2($data, $precision)
+moran.pm:# Usage @ar = round(\@data, $precision)
+moran.pm:# Usage $total = sum(\@data)
+moran.pm:# Usage: $mean = mean (\@array);
+moran.pm:# Usage: $sd = standard_deviation_data(\@array)
+moran.pm:# Usage: @log_values = cal_log(\@data )
+moran.pm:# Usage: @ratios = cal_ratios(\@data, $denominator )
+moran.pm:# Usage: $significance = cal_sig_of_moranI(\@W, \@data, $num_of_permutation, $moranI, $repeat)
+moran.pm:# Usage: @ar = permutate(\@data)
+moran.pm:#Usage @diff = cal_diff(\@data, $mean)
+moran.pm:#Usage $result = factorial(100);
+moran.pm:# Usage:  $I = calculate_moranI_2(\@adj_matrix, \@data);
+Nucleotide.pm:#Usage: $num_of_T = countT($dna_seq);
+Pajek.pm:# Usage: @define_Pajek_colors = get_defined_Pajek_colors();
+skeleton.pm:# Usage: 
+Taxonomy.pm:# Usage:        if (  hit_hyperthermo_bac ( @hit1, $hit2, ... ... ) eq 'YES' )
+Taxonomy.pm:# Usage:        if (  hit_crenarchaeota( @hit1, $hit2, ... ... ) eq 'YES' )
+Taxonomy.pm:# Usage:        if (  hit_euryarchaeota( @hit1, $hit2, ... ... ) eq 'YES' )
+Taxonomy.pm:# Usage: 	if ( hit_eubacteria_beta( @hit1, $hit2, ... ... ) eq "YES" ) 
+Util.pm:# Usage: $flag = parse_paired_ids_by_row(\$in_file,\%pairs);  
+Util.pm:# Usage: %unique_hash1_keys    = hash1_not_in_hash2(\%hash1,\%hash2);    
+Util.pm:# Usage: $shared_keys = get_shared_keys(\%hash1, \%hash2);
+Util.pm:# Usage:  Untested. $new_line = remove_white_spaces_of_a_line($line, $delim);   
+Util.pm:# Usage: $flag = concatenate_hashes(\%large_hash, \%small_hash, \$delim);
+Util.pm:# Usage: $flag = array_2_file(\$filename, \@lines, \$delim);
+Util.pm:# Usage: $flag = array_2_filehandle( $fh, \@lines, \$delim);
+Util.pm:# Usage: $flag = array_2_filehandle_with_return( $fh, \@lines, \$delim);
+Util.pm:# Usage: $flag = adjacency_list_2_pairs (\%neighbours, \%pairs );
+Util.pm:# Usage: %symmetrized_hash = symmetrize_a_hash_by_keys( \%input_hash );  
+Util.pm:# Usage: $short_name =  get_shortened_name ($filename);
+Util.pm:# Usage: hash_2_filehandle3( $fh, \%hash, $dlim1, $dlim2 );
+Util.pm:# Usage: hash_2_filehandle($fh, \%hash, \@ordered_keys, \$delimitor);
+Util.pm:# Usage: hash_2_filehandle2($fh, \%hash, \@ordered_keys, \$delim_key, \$delim_out);
+Util.pm:# Usage:  my $short_date = get_short_date_US();
+Util.pm:# Usage:  my $short_time_stamp = get_short_time_stamp_US();
+Util.pm:# Usage:  my $time_stamp = get_time_stamp_US();     
+Util.pm:# Usage:  $flag = parse_ordered_ids_by_row(\$in_file,\@ordered_ids);
+Util.pm:# Usage:  $flag = parse_single_network_in_adjList(\$networkfile,\%neighbours,\%dictionary,\$old_header);  
+Util.pm:# Usage:  $flag = parse_dictionary(\$dic_file, \%dictionary, \%oldDefiniton_2_newDefition);   
+Util.pm:# Usage:  $flag = parse_dictionary(\$dic_file, \%dictionary );   
+Util.pm:# Usage: my %heterogenous_pairs = remove_homodimers(\%input_pairs);   
+Util.pm:# Usage: $flag = translate_adjacency_list_2_pairs_by_lookupTable (\%old_neighbours, \%new_pairs, \%lookup_table );
+Util.pm:# Usage: $largest_symbol =  get_largest_symbol(@symbols);  
+Util.pm:# Usage: $flag = all_vertices_BFS (\%neighbours, \%paths )
+Util.pm:# Usage: $flag = single_source_BFS (\%neighbours, $source, \%paths )
+Util.pm:# Usage: $flag = get_nonRedundant_clusters(\%in_clusters,\%nr_clusters, [ \%node_2_cluster_head ] );
+Util.pm:# Usage: $flag = all_sources_BFS_on_same_colored_nodes (\%neighbours, \%same_color_clusters,\%dictionary)  
+Util.pm:# Usage: $flag = single_source_BFS_on_same_colored_nodes (\%neighbours, $source, 
+Util.pm:# Usage: @longest_list =  get_longest_lists( @array_of_lists );     
+Util.pm:# Usage: @new_lines = single_linkage_cluster_on_array_of_list ( @lines )
+Util.pm:# Usage: @new_lines = one_step_single_linkage_cluster_on_headList( @lines )
+Util.pm:# Usage: @new_lines = single_linkage_cluster_on_head_list( @lines );
+Util.pm:# Usage: %all_nr_pairs = get_all_nr_pairs (\@all_neighbouring_nodes );
+Util.pm:# Usage: $flag = pairwise_to_adjacency_list(\%pairwised_ids, \%neighbours);
+Util.pm:# Usage: @linked_list = convert_pairwise_to_linked_list(\%pairwised_ids, \@unique_ids);
+Util.pm:# Usage: @linked_list = attach_categories(\@linked_list, \%categoires);
+Util.pm:# Usage: %pairs = get_pairs(\@data);
+Util.pm:# Usage: @array_without_self_pairing_at_even_positions = remove_self_pairing_at_even_position(\@data);
+Util.pm:# Usage: $index = get_first_tandem_repeats_at_even_positions(\@data);
+Util.pm:# Usage: ($bigger, $smaller) = order_big2small( $string1, $string2);
+Util.pm:# Usage: @big_2_small_elements = order_big2small_array( @elements);
+Util.pm:# Usage: @nonredunt_elements = get_nonredundant_elements ( \@elements );
+Util.pm:# Usage: %nr_pairs = get_nonredundant_unordered_pairs2( \@pair1_in_lines, \@pair2_in_lines );
+Util.pm:# Usage: %shared_pairs = get_shared_pairs( \%hashTable1, \%hashTable2 );
+Util.pm:# Usage: @lines = remove_white_spaces(@lines);
+Util.pm:# Usage: write_hash2file(\%hash, $outfile, "\t");  
+Util.pm:# Usage: set_hash(\%hash1, \@lines, "\t" );   
+Util.pm:# Usage:  %intersection = intersection( \%hash1,\%hash2 )
+Util.pm:# Usage: showHashTable2(\%hashTableInput, $lowest_value);
+Util.pm:# Usage: showHashTable(\%hashTableInput);
+Yeast.pm:# Usage: $answer = is_SGD_orf($id1, [$id2], ... ...);

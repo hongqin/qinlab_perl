@@ -1,0 +1,31 @@
+# Usage: %freq = get_freq(\@data);
+# Usage: $occurence = occurence_of_less_or_equal_inputValue(\@data, $value);
+# Usage: $occurence = occurence_of_greater_or_equal_inputValue(\@data, $value);     
+# Usage: $coviance = covariance(\@x, \@y)
+# Usage: $Pearson_R = correlation(\@x, \@y)
+# Usage: ( $slope, $intercept ) = best_line(\@x, \@y)      
+# Usage: $significance = gaussian1 ($value_of_interest, $mean, $variance )
+# Usage: $min = min(@data) 
+# Usage: $max = max(@data)
+# Usage: @i_min = mini(\@data)
+# Usage: @i_max = maxi(\@data)
+# Usage: ( $y_string, $x_string) = histogram_2_xyStrings( \@histogram, "\t" );   
+# Usage: @histograms = getHistogram_integer(\@integers, $step,$lowerBound, $upperBound )
+# Usage: @histograms = getHistogram(\@data, $num_of_bins, $lowerBound, $upperBound )
+# Usage:  ??
+# Usage: ?
+# Usage $significance = pseduoSignificance($totalNum, $count, $mean, $bootstrap) ;
+# Usage @ar= randomIntegerSet( $lowerBound, $upperBound, $number_of_randomIntegers )
+# Usage $flag = round_hash(\%hash, $precision)
+# Usage $return = round2($data, $precision)
+# Usage @ar = round(\@data, $precision)
+# Usage $total = sum(\@data)
+# Usage: $mean = mean (\@array);
+# Usage: $sd = standard_deviation_data(\@array)
+# Usage: @log_values = cal_log(\@data )
+# Usage: @ratios = cal_ratios(\@data, $denominator )
+# Usage: $significance = cal_sig_of_moranI(\@W, \@data, $num_of_permutation, $moranI, $repeat)
+# Usage: @ar = permutate(\@data)
+#Usage @diff = cal_diff(\@data, $mean)
+#Usage $result = factorial(100);
+# Usage:  $I = calculate_moranI_2(\@adj_matrix, \@data);

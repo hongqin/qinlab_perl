@@ -1,0 +1,1 @@
+# Usage: $answer = is_SGD_orf($id1, [$id2], ... ...);

@@ -1,0 +1,13 @@
+# Usage: my @triplets = line2triplets( \$line );
+# Usage: my %triplet_pos = get_triplet_positions_in_a_string( \$line );       
+# Usage: $string_of_delimited_triplets = seq2delimited_triplets($seq);
+# Usage: showCodonTableInTCAG2(\%codons_hash1, \%codons_hash2);
+# Usage: showCodonTableInTCAG(\%codons_hash);
+# Usage: getStandardCodonsHashTable(\%codons_hash);
+# Usage: getStandardCodons(\@codons);
+# Usage: $Answer = EndIsStopCodon($dna);
+#Usage: %merged_codon_counts = mergeCounts(\%FirstCount, \%SecondCount);
+#Usage:  $four_fold_seq = dna2_4fold($nuc);   
+#Usage: %codon_counts = countEachOf64Codons($dna_seq_no_gap);
+#Usage: $num_of_T = countT($dna_seq) 041903 moved to Nucleotide.pm
+#Usage $num_of_fold = codon_is_nfold($codon);

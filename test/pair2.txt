@@ -1,0 +1,5 @@
+222	two
+germany	blue
+china	red
+usa	red_blue_white
+
